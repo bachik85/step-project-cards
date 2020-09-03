@@ -1,0 +1,58 @@
+.container {
+    font-family: sans-serif;
+}
+
+.header {
+    background-color: cornflowerblue;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cardio {
+    border-left: 5px solid #d33b3b;
+}
+
+.card {
+    background-color: #f7f7f7;
+    border-radius: 1px 8px 8px 1px;
+    overflow: hidden;
+
+}
+
+.card__header {
+    background-color: #d33b3b;
+    padding: 10px;
+    color: #f7f7f7;
+}
+
+.card__doctor {
+    font-weight: 800;
+    font-size: 16px;
+
+
+}
+
+.card__fio {
+    font-weight: 800;
+    font-size: 16px;
+    color: grey;
+    padding: 10px;
+}
+
+.cards-container {
+    background-color: #ECECEC;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.cards-container__open {
+    /*background-color: beige;*/
+    width: 50%;
+    border-right: 1px solid #909090;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
