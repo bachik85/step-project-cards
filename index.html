@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cards</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<div class="container">
+<header class="header">
+    <a href="#" class="header__logo">
+        <img src="./img/logo.svg" alt="Doctors logo">
+    </a>
+    <button class="header__button" id="headerButton">Вход</button>
+</header>
+
+<section class="cards-container" id="cardsContainer">
+    <div class="cards-container__open">
+
+        <div class="card cardio">
+            <div class="card__header">
+                <h3 class="card__doctor">Кардиолог</h3>
+                <button class="card__edit">Edit</button>
+                <nav class="card__edit-menu">
+                    <li class="card__edit edit">Edit</li>
+                    <li class="card__edit delete">Delete</li>
+                </nav>
+            </div>
+            <p class="card__fio">Артем Пономаренко</p>
+            <div class="card__info">
+                <p class="card__info-elem purpose">Цель визита</p>
+                <p class="card__info-elem description">Описание визита</p>
+                <label for="cardPriority">Срочность</label>
+                <select id="cardPriority" name="Select priority">
+                    <option value="normal">Обычная</option>
+                    <option value="priority">Приоритетная</option>
+                    <option value="urgent">Неотложная</option>
+                </select>
+
+                <p class="card__info-elem davlenie">Обычное давление</p>
+                <p class="card__info-elem ind-weight">Индекс массы тела</p>
+                <p class="card__info-elem deceases">Перенесенные заболевания</p>
+                <p class="card__info-elem priority">Возраст</p>
+            </div>
+        </div>
+    </div>
+    <div class="cards-container-closed">
+
+    </div>
+
+</section>
+</div>
+</body>
+</html>
