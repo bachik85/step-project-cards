@@ -1,4 +1,4 @@
-// import HeaderButton from "./header-button.js";
+// import HeaderButton from "./components.js";
 
 class HeaderButton {
     constructor(login, createCard) {
