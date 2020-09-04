@@ -7,24 +7,32 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cards</title>
     <link rel="stylesheet" href="./css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/styles-utils.css">
 </head>
 <body>
 
 <div class="container">
+
 <header class="header">
-    <a href="#" class="header__logo">
-        <img src="./img/logo.svg" alt="Doctors logo">
-    </a>
-    <button class="header__button" id="headerButton">Вход</button>
+    <h1 class="h1-style">Best clinic ever</h1>
 </header>
+
+<form class="login-form hidden" id="loginForm">
+    <h2 class="h2-style">Please login</h2>
+    <input type="text" name="email" placeholder="Enter email" class="input-field">
+    <input type="password" name="password" placeholder="Enter password" class="input-field">
+    <button class="input-button">Login</button>
+    <button class="cancel-button">Cancel</button>
+</form>
 
 <section class="cards-container" id="cardsContainer">
     <div class="cards-container__open">
 
         <div class="card cardio">
             <div class="card__header">
-                <h3 class="card__doctor">Кардиолог</h3>
+                <h3 class="h3-style">Кардиолог</h3>
                 <button class="card__edit">Edit</button>
                 <nav class="card__edit-menu">
                     <li class="card__edit edit">Edit</li>
@@ -55,5 +63,12 @@
 
 </section>
 </div>
+
+<script src="js/components.js" type="module" defer></script>
+<script src="js/script.js" type="module" defer></script>
+<script src="js/forms.js" type="module" defer></script>
+<script src="js/visit.js" type="module" defer></script>
+<script src="js/cards.js" type="module" defer></script>
+<script src="js/search.js" type="module" defer></script>
 </body>
 </html>
