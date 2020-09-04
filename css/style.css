@@ -1,14 +1,31 @@
 .container {
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
+/*HEADER STYLING*/
 .header {
-    background-color: cornflowerblue;
+    background-color: #5e5e5e;
     height: 60px;
+    padding: 0 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 400px;
+    height: 100vh;
+    background-color: #f7f7f7;
+    padding: 20px;
+}
+
+/*CARDS CONTAINER STYLING*/
 
 .cardio {
     border-left: 5px solid #d33b3b;
@@ -16,22 +33,15 @@
 
 .card {
     background-color: #f7f7f7;
-    border-radius: 1px 8px 8px 1px;
-    overflow: hidden;
-
+    border-radius: 5px;
+    /*overflow: hidden;*/
 }
 
-.card__header {
-    background-color: #d33b3b;
-    padding: 10px;
-    color: #f7f7f7;
-}
+
 
 .card__doctor {
     font-weight: 800;
     font-size: 16px;
-
-
 }
 
 .card__fio {
