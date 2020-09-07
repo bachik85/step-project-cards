@@ -1,0 +1,91 @@
+/*HEADERS*/
+
+.h1-style {
+    font-size: 36px;
+    font-weight: 800;
+    color: #f7f7f7;
+}
+
+.h2-style {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.h3-style {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/*INPUTS*/
+
+.input-field {
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    border-radius: 2px;
+    background-color: #EFEFEF;
+}
+
+.input-button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    border-radius: 2px;
+    background-color: #2d2d2d;
+    color: #f7f7f7;
+    outline: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+.cancel-button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    border-radius: 2px;
+    background-color: transparent;
+    color: #2d2d2d;
+    outline: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+.cancel-button:hover {
+    background-color: #EFEFEF;
+}
+
+.header-button {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    border-radius: 2px;
+    background-color: chocolate;
+    color: #f7f7f7;
+    outline: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+/*UTILS*/
+
+.hidden {
+    display: none;
+}
+
+.red-bg {
+    background-color: brown;
+}
+
+.red-font {
+    color: brown;
+}
