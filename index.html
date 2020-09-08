@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cards</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/styles-utils.css">
+</head>
+<body>
+
+<div class="container">
+
+<header class="header">
+    <h1 class="h1-style">Best clinic ever</h1>
+</header>
+
+<form class="login-form hidden" id="loginForm">
+    <h2 class="h2-style">Please login</h2>
+    <input type="text" name="email" placeholder="Enter email" class="input-field">
+    <input type="password" name="password" placeholder="Enter password" class="input-field">
+    <button class="input-button">Login</button>
+    <button class="cancel-button">Cancel</button>
+</form>
+
+<section class="cards-container" id="cardsContainer">
+    <div class="cards-container__open">
+
+        <div class="card cardio">
+            <div class="card__header">
+                <h3 class="h3-style">Кардиолог</h3>
+                <button class="card__edit">Edit</button>
+                <nav class="card__edit-menu">
+                    <li class="card__edit edit">Edit</li>
+                    <li class="card__edit delete">Delete</li>
+                </nav>
+            </div>
+            <p class="card__fio">Артем Пономаренко</p>
+            <div class="card__info">
+                <p class="card__info-elem purpose">Цель визита</p>
+                <p class="card__info-elem description">Описание визита</p>
+                <label for="cardPriority">Срочность</label>
+                <select id="cardPriority" name="Select priority">
+                    <option value="normal">Обычная</option>
+                    <option value="priority">Приоритетная</option>
+                    <option value="urgent">Неотложная</option>
+                </select>
+
+                <p class="card__info-elem davlenie">Обычное давление</p>
+                <p class="card__info-elem ind-weight">Индекс массы тела</p>
+                <p class="card__info-elem deceases">Перенесенные заболевания</p>
+                <p class="card__info-elem priority">Возраст</p>
+            </div>
+        </div>
+    </div>
+    <div class="cards-container-closed">
+
+    </div>
+
+</section>
+</div>
+
+<script src="js/components.js" type="module" defer></script>
+<script src="js/script.js" type="module" defer></script>
+<script src="js/forms.js" type="module" defer></script>
+<script src="js/visit.js" type="module" defer></script>
+<script src="js/cards.js" type="module" defer></script>
+<script src="js/search.js" type="module" defer></script>
+</body>
+</html>
