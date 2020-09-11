@@ -15,53 +15,53 @@ class ModalCreateCard extends Modal {
     this.extendedOptionsContainer = null;
     this.cardContainer = document.getElementById('card__main-container');
     this.cardFieldArray = [
-      new Input('text', 'patientFullName', 'ФИО', '[:alpha:]', 'only letters please'),
+      new Input('text', 'patientFullName', 'ФИО', '[:alpha:]', 'только буквы'),
       new Select('doctorType', [
-        {text: 'Choose doctor', value: ''},
-        {text: 'Cardiologist', value: 'cardiologist'},
-        {text: 'Dentist', value: 'dentist'},
-        {text: 'Therapist', value: 'therapist'},
+        {text: 'Выбрать доктора', value: ''},
+        {text: 'Кардиолог', value: 'cardiologist'},
+        {text: 'Дантист', value: 'dentist'},
+        {text: 'Терапевт', value: 'therapist'},
       ]),
     ];
 
     this.extendedOptionsArray = {
       cardiologist: [
-        new Input('text', 'visitPurpose', 'Visit Purpose'),
-        new Input('text', 'visitDescription', 'Visit Description'),
+        new Input('text', 'visitPurpose', 'Цель визита'),
+        new Input('text', 'visitDescription', 'Описание визита'),
         new Select('urgency', [
-          {text: 'Choose urgency', value: ''},
-          {text: 'Emergency', value: 'emergency'},
-          {text: 'Priority', value: 'priority'},
-          {text: 'Regular', value: 'regular'},
+          {text: 'Срочность', value: ''},
+          {text: 'Срочная', value: 'emergency'},
+          {text: 'Приоритетная', value: 'priority'},
+          {text: 'Регулярная', value: 'regular'},
         ]),
-        new Input('text', 'bloodPressure', 'Blood Pressure'),
-        new Input('text', 'bodyMassIndex', 'Body Mass Index'),
-        new Input('text', 'transferredDiseases', 'Transferred Diseases'),
-        new Input('text', 'patientAge', 'Patient Age')
+        new Input('text', 'bloodPressure', 'Артериальное давление'),
+        new Input('text', 'bodyMassIndex', 'Индекс массы тела'),
+        new Input('text', 'transferredDiseases', 'Перенесенные заболевания'),
+        new Input('text', 'patientAge', 'Возраст')
       ],
 
       dentist: [
-        new Input('text', 'visitPurpose', 'Visit Purpose'),
-        new Input('text', 'visitDescription', 'Visit Description'),
+        new Input('text', 'visitPurpose', 'Цель визита'),
+        new Input('text', 'visitDescription', 'Описание визита'),
         new Select('urgency', [
-          {text: 'Choose urgency', value: ''},
-          {text: 'Emergency', value: 'emergency'},
-          {text: 'Priority', value: 'priority'},
-          {text: 'Regular', value: 'regular'},
+          {text: 'Срочность', value: ''},
+          {text: 'Срочная', value: 'emergency'},
+          {text: 'Приоритетная', value: 'priority'},
+          {text: 'Регулярная', value: 'regular'},
         ]),
-        new Input('text', 'dateOfLastVisit', 'Date Of LastVisit'),
+        new Input('text', 'dateOfLastVisit', 'Дата последнего визита'),
       ],
 
       therapist: [
-        new Input('text', 'visitPurpose', 'Visit Purpose'),
-        new Input('text', 'visitDescription', 'Visit Description'),
+        new Input('text', 'visitPurpose', 'Цель визита'),
+        new Input('text', 'visitDescription', 'Описание визита'),
         new Select('urgency', [
-          {text: 'Choose urgency', value: ''},
-          {text: 'Emergency', value: 'emergency'},
-          {text: 'Priority', value: 'priority'},
-          {text: 'Regular', value: 'regular'},
+          {text: 'Срочность', value: ''},
+          {text: 'Срочная', value: 'emergency'},
+          {text: 'Приоритетная', value: 'priority'},
+          {text: 'Регулярная', value: 'regular'},
         ]),
-        new Input('text', 'patientAge', 'Patient Age')
+        new Input('text', 'patientAge', 'Возраст')
       ],
     }
 
@@ -84,17 +84,11 @@ class ModalCreateCard extends Modal {
 
 
   chooseSelect({target}) {
-
-    console.log(target.value);
     this.extendedOptionsContainer.innerHTML = '';
     this.extendedOptionsArray[target.value].forEach(element => this.extendedOptionsContainer.append(element.render()));
-
-
-
   }
 
   async createCard(event) {
-    console.log('create card');
     event.preventDefault();
     const noVisitSpan = document.getElementById('noVisitsSpan');
     const body = this.serializeJSON();
@@ -113,6 +107,5 @@ class ModalCreateCard extends Modal {
     this.closeModal();
   }
 }
-
 
 export {ModalCreateCard};

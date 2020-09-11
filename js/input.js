@@ -18,6 +18,4 @@ class Input extends FormField {
     return this.element;
   }
 }
-
-
 export {Input};

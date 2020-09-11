@@ -20,7 +20,6 @@ class FormField {
     }
   }
 
-
   deleteError() {
     if(this.errorP) {
       this.errorP.remove();

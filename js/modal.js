@@ -20,15 +20,11 @@ class Modal extends Form {
     return this.elem;
   }
 
-  closeModal(){
+  closeModal() {
     const form = document.getElementById(this.id);
     form.classList.toggle('modal--show');
     form.classList.toggle('modal--close');
-    setTimeout(()=> {
-      form.remove();
-    },400);
   }
-
 }
 
 export {Modal};

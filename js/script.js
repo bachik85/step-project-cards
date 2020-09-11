@@ -1,5 +1,3 @@
-// import HeaderButton from "./components.js";
-
 class HeaderButton {
     constructor(login, createCard) {
         this.login = login;
